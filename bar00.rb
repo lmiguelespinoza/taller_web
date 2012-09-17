@@ -7,3 +7,6 @@ end
 get '/bar02' do
 	erb:bar02
 end
+get '/bar03' do
+	erb:bar03
+end

@@ -56,44 +56,27 @@
     <header>
         <h1> ¿Dónde quedamos? </h1>
         <blockquote>
-            <p> Ruta del Pisco : aquí encontraras los lugares donde preparan los mejores tragos,  teniendo como  base el Pisco </p>
+            <p> Registro : actualizar tus datos es importante para poder acceder a los beneficios exclusivos, como descuentos, ofertas, promociones en los mejores bares</p>
             <p> ________________________________________________________________________________________________</p>
         </blockquote>
     </header>    
     <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery"></div>
         <a>
         <div class="image-wrapper">
-          <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcTfBWj35nWOMPNHaPy7i-MZZrFX23CPLHeYGQ47pblDaORIz8c2">
-          <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcSoJgSQVV8AgX8jOZfdBoVbnzSPJQmHCi-hcOJZw8PrbvXHW7DA">
+          <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcQw29ChFeTrlMf8tE5MNfm_Pqc_K0w6IXrgZxpfhm4NTiYZMRNk">
         </div>
-        </a> <br /> 
-    <br>
+        </a> <br />  <br />
+
+    <form action="form_action.asp" method="get">
+        <p>Nombre</p>   <input type="text" name="nombre" /><br />
+        <p> Apellido</p>    <input type="text" name="apellido" /><br />
+        <p> Correo </p> <input type="text" name="correo" /><br />
+        <br />
+        <button id="toggle-fullscreen" href="/bar03" class="btn btn-large btn-primary" data-slideshow="5000" data-toggle="button">Actualizar</button>
+   </form> 
 </div>
 
-<div class="full-search-bar">
-    <ul class="item-stream unstyled search-input-stream">
-    <li class="stream-item stream-header search-input-item">
-    <form class="form-inline search-form" action="/artists/search">
-        <input class="xlarge" class="artist-search" id="artist_search" name="q" type="text" placeholder="Pisco" autocomplete="off" value="" />
-        <button class="btn btn-large btn-inverse" id="artist_submit" type="submit"><i class="icon-search icon-white"></i></button>
-    </form>
-    <form accept-charset="UTF-8" action="/playlists" class="playlist-form" id="new_playlist" method="post">
-        <div style="margin:0;padding:0;display:inline">
-            <input name="utf8" type="hidden" value="&#x2713;" />
-            <input name="authenticity_token" type="hidden" value="Ma53NGBcEwMCE4e+t3+SfkWs2AS+lmNcAwVVYzOY8T4=" />
-        </div>
-        <input type="hidden" class="artist-id" name="artist_id" value="" />
-    </form>      
-    </li>
-    </ul>
-    <div class="search-status">
-        <img src="/assets/circle_loader.gif" class="search-loader" />
-    </div>
-</div>
 
-<div class="mapa">
-     <iframe width="625" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=217695024059370418650.0004c9dd40c0f93be5524&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=-12.095388,-77.016048&amp;spn=0.058748,0.107288&amp;z=13&amp;output=embed"></iframe><br />
-</div>
 
 </body> 
 </html>
