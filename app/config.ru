@@ -2,4 +2,4 @@
 
 require ::File.expand_path('../config/environment',  __FILE__)
 run App::Application
-web: bundle exec ruby bar00.rb -p $PORT
+bundle exec ruby bar00.rb -p $PORT
