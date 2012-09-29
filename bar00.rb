@@ -4,9 +4,11 @@ require 'sinatra'
 get '/' do
 	erb:bar01
 end
+
 get '/bar02' do
 	erb:bar02
 end
+
 get '/bar03' do
 	erb:bar03
 end
