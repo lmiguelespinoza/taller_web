@@ -9,10 +9,14 @@ Luis Miguel Espinoza
 
 #Arquitectura
 Para el desarrollo se uso 
-Ruby, Sinatra
+Ruby
+Sinatra
+Mongodb
 
 Gemas usadas 
 
 gem 'sinatra', '1.1.0'
+
 gem mongo
+
 gem bson_ext
