@@ -4,6 +4,7 @@ Una página donde se podra ubicar los bares de Lima o adicionar nuevos puntos.
 #Integrantes
 
 Luis Oliva Peñaranda
+
 Luis Miguel Espinoza
 
 
