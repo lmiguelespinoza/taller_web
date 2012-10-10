@@ -8,16 +8,17 @@ Luis Oliva Peñaranda
 Luis Miguel Espinoza
 
 
-#Arquitectura
-Para el desarrollo se uso 
-Ruby
-Sinatra
-Mongodb
+## Arquitectura
+	Para el desarrollo se uso :
 
-Gemas usadas 
+	Ruby
+	Sinatra
+	Bootstrap
+	Mongodb
 
-gem 'sinatra', '1.1.0'
+	Gemas usadas :
 
-gem mongo
-
-gem bson_ext
+	gem sinatra
+	gem sinatra-contrib
+	gem mongo
+	gem bson_ext
