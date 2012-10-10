@@ -9,14 +9,14 @@ Luis Miguel Espinoza
 
 
 ## Arquitectura
-	Para el desarrollo se uso :
+Para su desarrollo se uso :
 
 	Ruby
 	Sinatra
 	Bootstrap
 	Mongodb
 
-	Gemas usadas :
+Gemas:
 
 	gem sinatra
 	gem sinatra-contrib
