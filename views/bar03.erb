@@ -1,33 +1,33 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title> ¿Dónde quedamos? </title>
-	<meta name="description" content=" Lugar obligado para la buena diversión">
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css">
-	<style> 
-		body {
-    			padding-top: 60px;
-    			background: #022;
-    			color: #fff;
-		}
-		header {
-    			margin-bottom: 30px;
-		}
-		header h1 {
-    			font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
-    			color: #fff;
-    			margin-bottom: 10px;
-		}
-		header a {
-    			color: orange;
-		}
-		.modal {
-    		color: #333;
-		}
-	</style>
-	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <meta charset="utf-8">
+    <title> ¿Dónde quedamos? </title>
+    <meta name="description" content=" Lugar obligado para la buena diversión">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css">
+    <style> 
+        body {
+                padding-top: 60px;
+                background: #022;
+                color: #fff;
+        }
+        header {
+                margin-bottom: 30px;
+        }
+        header h1 {
+                font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+                color: #fff;
+                margin-bottom: 10px;
+        }
+        header a {
+                color: orange;
+        }
+        .modal {
+            color: #333;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 </head>
 
 <body>
@@ -67,14 +67,14 @@
         </div>
         </a> <br />  <br />
 
-    <form action="form_action.asp" method="get">
+    <form action="/registra" method="post">
         <p>Código   </p>   <input type="text" name="codigo"    /><br />
         <p>Titulo   </p>   <input type="text" name="titulo"    /><br />
         <p>Contenido</p>   <input type="text" name="contenido" /><br />
         <p>Latitud  </p>   <input type="text" name="latitud"   /><br />
         <p>Longitud </p>   <input type="text" name="longitud"  /><br />
         <br />
-        <button id="toggle-fullscreen" href="/bar03" class="btn btn-large btn-primary" data-slideshow="5000" data-toggle="button">Actualizar</button>
+        <button type="submit" id="toggle-fullscreen" href="/bar03" class="btn btn-large btn-primary" data-slideshow="5000" data-toggle="button">Actualizar</button>
    </form> 
 </div>
 
