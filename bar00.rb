@@ -4,27 +4,86 @@ require 'mongo'
 require  './mon01.rb'
 #require "sinatra/reloader" if development?
 
+$gUsuario = ' Visita'
+$gTitulo = ''
+$gContenido = ''
+$gDireccion = ''
+$gDistrito = ''
+$gLatitud = ''
+$gLongitud = ''
+
+
 get '/' do
-	erb:bar01
+        erb:bar01
 end
 
 get '/bar02' do
-	erb:bar02
+        erb:bar02
 end
 
 get '/bar03' do
-	erb:bar03
+        erb:bar03
+end
+
+get '/bar04' do
+        erb:bar04
+end
+
+get '/bar05' do
+        erb:bar05
+end
+
+get '/bar06' do
+        erb:bar06
 end
 
 post '/registra' do
 
-        pCod = params[:codigo]
-        pTit = params[:titulo]
-        pCon = params[:contenido]
-        pLat = params[:latitud]
-        pLon = params[:longitud]
-        MongoADO.add_ruta(pCod, pTit, pCon, pLat, pLon)
-        redirect '/bar03'
+    pTit = params[:titulo]
+    pCon = params[:contenido]
+    pDir = params[:direccion]
+    pDis = params[:distrito]
+    pLat = params[:latitud]
+    pLon = params[:longitud]
+    MongoADO.add_ruta(pTit, pCon, pDir, pDis, pLat, pLon)
+    redirect '/bar03'
 
 end	
 
+post '/busTitulo' do
+
+    pTit = params[:titulo]    
+    reg=MongoADO.like_ruta(pTit)        
+    $gTitulo = ''
+    $gContenido = ''
+    $gDireccion = ''
+    $gDistrito = ''
+    $gLatitud = ''
+    $gLongitud = ''
+    if reg[0] != 'T00'
+        $gTitulo = reg[0].to_s[2,(reg[0].to_s.length - 4)] 
+        $gContenido = reg[1].to_s[2,(reg[0].to_s.length - 4)] 
+        $gDireccion = reg[2].to_s[2,(reg[2].to_s.length - 4)] 
+        $gDistrito = reg[3].to_s[2,(reg[3].to_s.length - 4)] 
+        $gLatitud = reg[4].to_s[2,(reg[4].to_s.length - 4)] 
+        $gLongitud = reg[5].to_s[2,(reg[5].to_s.length - 4)] 
+    end        
+    redirect '/bar02'
+
+end     
+
+post '/elimina' do
+
+    pTit = params[:titulo]
+    MongoADO.delete_ruta(pTit)
+    redirect '/bar05'
+
+end 
+
+post '/usuario' do
+
+    pUsu = params[:usuario]
+    $gUsuario = ' Bienvenido : ' + pUsu
+    redirect '/'
+
+end 
