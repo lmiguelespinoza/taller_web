@@ -11,13 +11,15 @@ $gDireccion = ''
 $gDistrito = ''
 $gLatitud = ''
 $gLongitud = ''
-
+$gTipo = 1
 
 get '/' do
+        $gTipo = 1
         erb:bar01
 end
 
 get '/bar02' do
+        $gTipo = 2
         erb:bar02
 end
 
@@ -26,10 +28,11 @@ get '/bar03' do
 end
 
 get '/bar04' do
+        $gTipo = 4
         erb:bar04
 end
 
-get '/bar05' do
+get '/bar05' do        
         erb:bar05
 end
 
@@ -68,7 +71,10 @@ post '/busTitulo' do
         $gLatitud = reg[4].to_s[2,(reg[4].to_s.length - 4)] 
         $gLongitud = reg[5].to_s[2,(reg[5].to_s.length - 4)] 
     end        
-    redirect '/bar02'
+
+    redirect '/'               if $gTipo == 1
+    redirect '/bar02'   if $gTipo == 2
+    redirect '/bar04'   if $gTipo == 4
 
 end     
 
