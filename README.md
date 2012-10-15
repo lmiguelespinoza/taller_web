@@ -28,7 +28,7 @@ Gemas:
 
 ## User Story
 
-Nuevos lugares
+# Nuevos lugares
 	Registrar nuevos bares, en un formato de :
 		Titulo          	:  Nombre de bar o apelativo identificable para hacer las búsquedas
 		Contenido 	:  Descripción del bar, lo que ofrece, horarios de atención y promociones.
@@ -37,14 +37,14 @@ Nuevos lugares
 		Latitud        	:  Uso de Google Maps
 		Longitud    	:  Uso de Google Maps
 
-Dar de baja a lugares
+# Dar de baja a lugares
 	Elimina bares, el dato necesario es el titulo, nombre o apelativo del bar.
 
-Ruta del Pisco
+# Ruta del Pisco
 	Búsqueda de preferencia bares que ofrecen tragos en base al Pisco
 
-Solo chelas
+# Solo chelas
 	Búsqueda de preferencia de bares que ofrecen solo cerveza.
 
-Iniciar sesión
+# Iniciar sesión
 	Permite registrarse como usuario.
