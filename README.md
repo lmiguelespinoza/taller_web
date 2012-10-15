@@ -30,12 +30,12 @@ Gemas:
 Nuevos lugares:
 
 	Registrar nuevos bares, en un formato de :
-		Titulo          	:  Nombre de bar o apelativo identificable para hacer las búsquedas
-		Contenido 	:  Descripción del bar, lo que ofrece, horarios de atención y promociones.
-		Dirección  	:  Lugar exacto de la avenida, calle, jirón del bar.
-		Distrito       	:  Indipensable para la búusqueda.
-		Latitud        	:  Uso de Google Maps
-		Longitud    	:  Uso de Google Maps
+		Titulo 		:  Nombre de bar o apelativo identificable para hacer las búsquedas
+		Contenido	:  Descripción del bar, lo que ofrece, horarios de atención y promociones.
+		Dirección	:  Lugar exacto de la avenida, calle, jirón del bar.
+		Distrito		:  Indipensable para la búusqueda.
+		Latitud		:  Uso de Google Maps
+		Longitud	:  Uso de Google Maps
 
 Dar de baja a lugares:
 
